@@ -1,0 +1,10 @@
+a {
+  text-decoration-line: none;
+  background-color: #d3eed3; }
+  a:active {
+    background-color: yellow; }
+
+.important {
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

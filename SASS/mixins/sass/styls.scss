@@ -1,0 +1,26 @@
+
+
+@mixin  text-shadow($shadow) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
+@mixin box-shadow($shadowBox) {
+    -webkit-box-shadow: $shadowBox;
+    -moz-box-shadow: $shadowBox; 
+    box-shadow: $shadowBox;
+}
+@mixin color($color) {
+    color: $color;
+}
+
+p{@include text-shadow(4px 4px 2px rgba(150, 150, 150, 1));
+  @include color(red);
+}
+div{
+    @include box-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

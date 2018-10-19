@@ -1,0 +1,19 @@
+.all, .two {
+  background-color: aqua;
+  color: red;
+  padding: 10px;
+  margin-bottom: 15px; }
+
+.first {
+  border: 1px solid red; }
+
+.two {
+  border: 1px solid blue; }
+
+.three {
+  border: 1px solid green; }
+
+p {
+  width: 31.25%; }
+
+/*# sourceMappingURL=style.css.map */

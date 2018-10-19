@@ -1,0 +1,44 @@
+$backgound-color-titles: blue;
+$width-bloc-elements: 100%; 
+$color-title: white  ;
+
+
+div{
+    width: $width-bloc-elements;
+    background-color: rgb(204, 222, 235);
+    overflow: hidden;
+
+    h2{
+        background-color: $backgound-color-titles;
+        color: $color-title;
+        margin-bottom: 0px;
+    }
+    h1{ 
+        background-color: $backgound-color-titles;
+        color: $color-title;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    img{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    p{
+        margin: 100px 0px 10px 0px;
+    }
+    
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $color-title;
+    
+    tr{
+        border-bottom: 1px solid rgb(231, 231, 231);
+    
+    }
+    td{
+        padding: 5px;
+    }
+}

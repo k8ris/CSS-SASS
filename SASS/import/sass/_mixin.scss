@@ -1,0 +1,14 @@
+@mixin  text-shadow($shadow) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
+@mixin box-shadow($shadowBox) {
+    -webkit-box-shadow: $shadowBox;
+    -moz-box-shadow: $shadowBox; 
+    box-shadow: $shadowBox;
+}
+@mixin color($color) {
+    color: $color;
+}

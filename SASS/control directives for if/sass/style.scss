@@ -1,0 +1,9 @@
+@import 'mixin';
+@for $i from 1 through 4 {
+  .item-#{$i} {
+      font-size: 16px * $i;
+      @include background-color($i);
+  }
+}
+
+

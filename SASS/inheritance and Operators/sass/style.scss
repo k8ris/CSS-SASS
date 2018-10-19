@@ -1,0 +1,22 @@
+
+.all{
+background-color: aqua;
+color: red;
+padding: 10px;
+margin-bottom: 15px;
+}
+.first{
+    border: 1px solid red;
+
+}
+
+.two{
+    border: 1px solid blue;
+    @extend .all;
+}
+.three{
+    border: 1px solid green;
+}
+p{
+    width: 300/960 *100%;
+}

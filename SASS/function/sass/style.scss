@@ -1,0 +1,20 @@
+@function translate-to-border-box($width,$border,$padding){
+    @return $width + 2*($border + $padding);
+}
+
+
+
+
+@function colon-width($colon-width,$number-of-colons) {
+    @return $colon-width * $number-of-colons;
+}
+
+.first{
+    width: 200px;
+}
+.second{
+    width: translate-to-border-box(200px,1px,20px);
+}
+table{
+    width:  colon-width(100px, 4);
+}

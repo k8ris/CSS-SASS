@@ -1,0 +1,14 @@
+@mixin background-color($i) {
+    @if $i==1 { 
+        background-color: red;
+    }
+    @else if $i==2 {
+        background-color: green;
+    }
+    @else if $i==3 {
+        background-color: yellow;
+    }
+    @else if $i==4 {
+        background-color: pink;
+    }
+}

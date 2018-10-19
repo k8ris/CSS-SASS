@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box model</title>
+    <style>
+     p {
+         background-color: yellow;
+         border-width: 5px ;
+         border-style: solid;
+        display: inline;
+          
+          
+     }
+ .red {
+         border: dashed red;
+         /* border-style: dashed;
+         border-color: brown; */
+         padding: 50px;
+         box-sizing: content-box;
+         
+         
+     }    
+     .middle {
+        /* border-style: solid;
+        border-color: green; */
+        border: solid green;
+        /* padding-top: 50px; */
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+     }
+     .first {
+       width: 50px;
+       height: 50px;
+       margin: 50px;
+       border-radius: 50%;
+       margin-right: 20px;
+     }
+     .third{
+           width: 50px;
+           margin-left: 100px;
+           margin-right: 20px;
+           box-decoration-break: 
+     }
+    </style>
+</head>
+
+<body>
+    <p class="red first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil, maio res blanditiis soluta
+         aut assumenda quam sapiente
+        est a ducimus. Nam tempora adipisci cupiditate illo mollitia iste quisquam deleniti at?
+    </p>
+    <p class="middle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil, maio res blanditiis soluta
+         aut assumenda quam sapiente
+        est a ducimus. Nam tempora adipisci cupiditate illo mollitia iste quisquam deleniti at?
+    </p>
+    <p class="red third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil, maio res blanditiis soluta
+         aut assumenda quam sapiente
+        est a ducimus. Nam tempora adipisci cupiditate illo mollitia iste quisquam deleniti at?
+    </p>
+</body>
+
+</html>

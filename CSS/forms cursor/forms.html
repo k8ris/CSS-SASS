@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <style>
+        div{
+            width: 350px;
+            height: 450px;
+            border-radius: 30px 0px 30px 0px;
+            margin:auto;
+            background-color: rgb(241, 241, 235); 
+            font-family: 'Gaegu', cursive;
+            font-family: 'Roboto', sans-serif;  
+        }
+        .title{
+            width: 100px;
+            text-align: right;    
+        }
+        input{
+    
+            margin-bottom: 15px;
+            border-radius: 5px;
+            width: 100%; 
+            height: 25px;
+            -webkit-box-shadow: 1px 0px 7px 0px rgba(54, 50, 50, 0.61);
+            -moz-box-shadow:    1px 0px 7px 0px rgba(54, 50, 50, 0.61);
+            box-shadow:         1px 0px 7px 0px rgba(54, 50, 50, 0.61);
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+
+
+        }
+        span{
+            color: orange;
+        }
+        h1{
+            text-align: center;
+            width: 80%;
+            margin: 20px auto 30px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(173, 173, 173);
+        }
+        form{
+            width: 80%;
+            margin: auto;
+        }
+
+        button{
+            border-radius: 5px;
+            width: 100%; 
+            height: 30px;
+            background-color: red;
+            border: solid red 1px;
+            color:  white;
+            margin-top: 20px;
+            cursor: url('data:image/jpeg;base64,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'),auto;
+            
+            
+        }
+        ::placeholder{
+            padding-left: 6px;
+            padding-top: 5px;
+
+        }
+        input:hover{
+            background-color: yellow;
+            cursor: crosshair;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+     
+      <h1>Form<span>Get</span></h1>
+    
+      <form action="" method="get">
+          <label class="title">Full Name</label>
+          <br>
+          <input type="text" name="full name" placeholder="Full Name">
+          <br>
+          <label class="title">Email</label>
+          <br>
+          <input type="text" name="email" placeholder="Email">
+          <br>
+          <label class="title">Contact Number</label>
+          <br>
+          <input type="text" name="number" placeholder="Contact Number">
+          <br>
+          <label class="title">Address</label>
+          <br>
+          <input type="text" name="address" placeholder="Address">
+          <br>
+          <button type="submit" value="submit">
+              Submit
+         </button>
+     </form>
+      
+    </div>
+    
+</body>
+</html>

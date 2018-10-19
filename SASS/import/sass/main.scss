@@ -1,0 +1,17 @@
+@import 'mixin';
+@import 'variables';
+
+
+
+body{
+    background-color: $background-color;
+}
+p{@include text-shadow(4px 4px 2px rgba(150, 150, 150, 1));
+    @include color(red);
+  }
+  div{
+      @include box-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+      width: 100px;
+      height: 100px;
+      background-color: red;
+  }

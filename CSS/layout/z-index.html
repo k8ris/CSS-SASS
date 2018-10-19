@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Z-index</title>
+    <style>
+       
+        div{
+            width: 200px;
+            height: 200px;
+        }
+      .first{
+         background-color: blue;
+      }
+      .second{
+          background-color: yellow;
+      }
+      .third{
+          background-color: brown;
+      }
+      .relative2{
+          position: relative;
+          bottom: 100px;
+          left: 100px;
+      }
+      .relative3{
+          position: relative;
+          bottom: 200px;
+          left: 200px;
+      }
+      .absolute{
+          position: absolute;
+          z-index: 3;
+      }
+     
+      .absolute2{
+         position: absolute;
+         top: 1350px;
+         left: 100px;
+         z-index: 2 ;
+         
+      }
+      .absolute3{
+          position: absolute;
+          top: 1450px;
+          left: 200px;
+          z-index: 1;    
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    
+    <hr>
+
+    <div class="first relative"></div>
+    <div class="second relative2"></div>
+    <div class="third relative3"></div>
+
+
+    <hr>
+    <p>
+     <div class="first absolute"></div>
+     <div class="second absolute2"></div>
+     <div class="third absolute3"></div>
+    </p>
+    
+
+
+</body>
+</html>

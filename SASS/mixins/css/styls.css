@@ -1,0 +1,16 @@
+p {
+  -webkit-text-shadow: 4px 4px 2px #969696;
+  -moz-text-shadow: 4px 4px 2px #969696;
+  -ms-text-shadow: 4px 4px 2px #969696;
+  text-shadow: 4px 4px 2px #969696;
+  color: red; }
+
+div {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 100px;
+  height: 100px;
+  background-color: red; }
+
+/*# sourceMappingURL=styls.css.map */
